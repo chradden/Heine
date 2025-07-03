@@ -364,19 +364,19 @@ jobs:
 
 ## 🔮 Roadmap
 
-### Version 2.0 (Q3 2025)
+### Version 2.0 
 - [ ] **RAG-Integration** mit echten Heine-Dokumenten
 - [ ] **E-Mail-Integration** vollständig implementieren
 - [ ] **React Frontend** für professionelle Nutzung
 - [ ] **Multi-Language Support** erweitern
 
-### Version 3.0 (Q4 2025)
+### Version 3.0 
 - [ ] **Telefon-Integration** mit Spracherkennung
 - [ ] **Advanced Analytics** Dashboard
 - [ ] **Machine Learning** für Eskalationsvorhersage
 - [ ] **Mobile App** für Support-Teams
 
-### Version 4.0 (Q1 2026)
+### Version 4.0 
 - [ ] **Multi-Tenant** erweiterte Features
 - [ ] **Advanced RAG** mit Hybrid-Suche
 - [ ] **Real-time Collaboration** zwischen AI und Menschen
