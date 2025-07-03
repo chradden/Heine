@@ -55,6 +55,38 @@ cp .env.example .env
 # Bearbeiten Sie .env mit Ihren API-Schlüsseln und Konfigurationen
 ```
 
+## Installation
+
+### Voraussetzungen
+
+- Python 3.11 oder höher
+- OpenAI API-Schlüssel
+- Mindestens 4GB RAM
+- 2GB freier Speicherplatz
+
+### Installation
+
+1. Repository klonen:
+```bash
+git clone <repository-url>
+cd heine-ai-system
+```
+
+2. Virtuelle Umgebung erstellen und aktivieren:
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# oder
+venv\Scripts\activate     # Windows
+```
+
+3. Abhängigkeiten installieren:
+```bash
+pip install -r requirements.txt
+```
+
+**Hinweis für Windows-Benutzer:** Das System verwendet ChromaDB mit HNSWLib als Vector Store Backend, da FAISS unter Windows schwer installierbar ist. Alle Funktionalitäten bleiben vollständig erhalten.
+
 ## Konfiguration
 
 ### Umgebungsvariablen (.env)

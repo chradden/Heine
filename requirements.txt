@@ -2,11 +2,10 @@
 langchain==0.1.0
 langchain-openai==0.0.5
 langchain-community==0.0.10
-openai==1.6.1
+openai>=1.10.0,<2.0.0
 
 # Vector Database
 chromadb==0.4.22
-faiss-cpu==1.7.4
 
 # Web Framework
 fastapi==0.104.1
@@ -19,8 +18,8 @@ requests==2.31.0
 
 # Data Processing
 pandas==2.1.4
-numpy==1.24.3
-pydantic==2.5.2
+numpy>=1.26.0
+pydantic>=1.10.0,<2.0.0
 
 # Document Processing
 pypdf==3.17.4
@@ -47,7 +46,7 @@ flake8==6.1.0
 mypy==1.7.1
 
 # Security
-cryptography==41.0.8
+cryptography>=42.0.0
 passlib==1.7.4
 
 # Email

@@ -29,12 +29,17 @@ class MultiTenantVectorStore:
             openai_api_key=self.system_config.openai_api_key
         )
         
-        # Initialisiere ChromaDB
+        # Initialisiere ChromaDB mit HNSWLib als Backend (ohne ONNX Runtime)
         self.chroma_client = chromadb.PersistentClient(
             path=self.system_config.vector_store_path,
             settings=Settings(
                 anonymized_telemetry=False,
-                allow_reset=True
+                allow_reset=True,
+                chroma_db_impl="duckdb+parquet",
+                persist_directory=self.system_config.vector_store_path,
+                # Deaktiviere ONNX Runtime für Windows-Kompatibilität
+                chroma_server_host="localhost",
+                chroma_server_http_port=8000
             )
         )
         
