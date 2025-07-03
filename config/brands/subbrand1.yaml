@@ -1,0 +1,37 @@
+name: "SubBrand1"
+description: "Sub-Marke für spezielle Produktlinie"
+knowledge_base_path: "./data/knowledge/subbrand1"
+api_endpoint: "https://api.subbrand1.heine.com"
+escalation_threshold: 0.6
+support_email: "support@subbrand1.heine.com"
+brand_voice: "modern, dynamisch, innovativ"
+primary_language: "de"
+supported_languages: ["de", "en"]
+
+# Markenspezifische Einstellungen
+brand_colors:
+  primary: "#ff6b35"
+  secondary: "#2c3e50"
+
+# Eskalationsregeln
+escalation_rules:
+  - trigger: "beschwerde"
+    priority: "high"
+    department: "kundenservice"
+  - trigger: "bestellung"
+    priority: "medium"
+    department: "vertrieb"
+
+# Wissensdatenbank-Kategorien
+knowledge_categories:
+  - "produkte"
+  - "bestellung"
+  - "versand"
+  - "allgemein"
+
+# API-Endpunkte
+api_endpoints:
+  customer: "/customers/{customer_id}"
+  order: "/orders/{order_id}"
+  shipping: "/shipping/{tracking_id}"
+  products: "/products" 
